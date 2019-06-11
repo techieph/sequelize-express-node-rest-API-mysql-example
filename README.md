@@ -1,0 +1,1 @@
+# sequelize-node-mysql-example
