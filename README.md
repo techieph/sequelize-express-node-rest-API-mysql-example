@@ -17,6 +17,7 @@
 ## API Requests
 
 1. **GET** {{server_url}}:3000 - To check whether the API is running
+
 *Response:*
 ```
 {
@@ -25,6 +26,7 @@
 ```
 
 2. **GET** {{server_url}}:3000/api - To check whether the API is running for routes inside routes folder
+
 *Response:*
 ```
 {
@@ -33,6 +35,7 @@
 ```
 
 3. **POST** {{server_url}}:3000/api/create/company - To Insert a new Record into the companies table
+
 *Body:*
 ```
 {
@@ -40,6 +43,8 @@
 	"address": "Your Address"
 }
 ```
+
+
 *Response:*
 ```
 {
