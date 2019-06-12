@@ -57,3 +57,64 @@
 }
 }
 ```
+
+4. **GET** {{server_url}}:3000/api/company/ - To get all avaibale companies in database
+
+*Response:*
+```
+[
+  {
+    "id": 1,
+    "name": "Your Name 1",
+    "address": "Your Address 2,
+    "createdAt": "2019-06-11T10:19:27.000Z",
+    "updatedAt": "2019-06-11T10:19:27.000Z"
+  },
+  {
+    "id": 2,
+    "name": "Your Name 2",
+    "address": "Your Address 2",
+    "createdAt": "2019-06-11T10:20:22.000Z",
+    "updatedAt": "2019-06-12T08:31:50.000Z"
+  }
+]
+```
+
+5. **PUT** {{srver_url}}:3000/api/update/company/{{company_id}} - Updates the row which has the specified company_id
+
+*Body:*
+```
+{
+	"name" : "Your Name",
+	"address" : "Your Address"
+}
+```
+
+*Response:*
+```
+{
+  "message": "Updated Successfully"
+}
+```
+
+6. **GET** {{server_url}}:3000/api/company/{{company_id}} - Gets the company which has the specified compnay_id
+
+*Response:*
+```
+{
+    "id": 1,
+    "name": "Your Name 1",
+    "address": "Your Address 2,
+    "createdAt": "2019-06-11T10:19:27.000Z",
+    "updatedAt": "2019-06-11T10:19:27.000Z"
+  }
+```
+
+7. **DELETE** {{server_url}}:3000/api/delete/company/{{company_id}} - Delete the company row whose company_id is specified
+
+*Response:*
+```
+{
+  "message": "Deleted Successfully"
+}
+```
